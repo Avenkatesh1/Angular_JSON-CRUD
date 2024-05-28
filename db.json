@@ -1,0 +1,9 @@
+{
+    "user":[
+        {"userId":101, "userName":"Venkatesh"},
+        {"userId":102, "userName":"Sthish"},
+        {"userId":103, "userName":"Nandini"},
+        {"userId":104, "userName":"Raju"},
+        {"userId":105, "userName":"Amma"}
+    ]
+}    
