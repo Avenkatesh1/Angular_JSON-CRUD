@@ -5,5 +5,18 @@
         {"userId":103, "userName":"Nandini"},
         {"userId":104, "userName":"Raju"},
         {"userId":105, "userName":"Amma"}
-    ]
+    ],
+    "cityList":["Bangalore", "Hydharabad", "Pune", "Maharastra"],
+    "createList":{
+        "result":"true",
+        "data":{"userId":101, "userName":"Venkatesh"}
+    },
+    "updateList":{
+        "result":"true",
+        "data":{"userId":102, "userName":"Venkat"}
+    },
+    "deleteList":{
+        "result":"true",
+        "data":{"userId":103, "userName":"Venky"}
+    }
 }    
