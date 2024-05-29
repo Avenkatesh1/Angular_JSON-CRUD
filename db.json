@@ -1,22 +1,26 @@
 {
     "user":[
-        {"userId":101, "userName":"Venkatesh"},
-        {"userId":102, "userName":"Sthish"},
-        {"userId":103, "userName":"Nandini"},
-        {"userId":104, "userName":"Raju"},
-        {"userId":105, "userName":"Amma"}
+        {"userId":101, "userName":"Venkatesh", "FName":"ABC", "LName":"ABC", "City":"BLR", "State":"KA", "Pincode":560029},
+        {"userId":102, "userName":"Sthish", "FName":"ABC", "LName":"ABC", "City":"BLR", "State":"KA", "Pincode":560029},
+        {"userId":103, "userName":"Nandini", "FName":"ABC", "LName":"ABC", "City":"BLR", "State":"KA", "Pincode":560029},
+        {"userId":104, "userName":"Raju", "FName":"ABC", "LName":"ABC", "City":"BLR", "State":"KA", "Pincode":560029},
+        {"userId":105, "userName":"Amma", "FName":"ABC", "LName":"ABC", "City":"BLR", "State":"KA", "Pincode":560029}
     ],
-    "cityList":["Bangalore", "Hydharabad", "Pune", "Maharastra"],
+    "cityList":["Bangalore", "Hydharabad", "Pune", "Andhrapradesh"],
+    "stateList":["KA", "TL", "MH", "AP"],
     "createList":{
         "result":"true",
-        "data":{"userId":101, "userName":"Venkatesh"}
+        "data":{"userId":101, "userName":"Venkatesh", "FName":"ABC", "LName":"ABC", "City":"BLR", "State":"KA", "Pincode":560029}
+
     },
     "updateList":{
         "result":"true",
-        "data":{"userId":102, "userName":"Venkat"}
+        "data":{"userId":101, "userName":"Venkatesh", "FName":"ABC", "LName":"ABC", "City":"BLR", "State":"KA", "Pincode":560029}
+
     },
     "deleteList":{
         "result":"true",
-        "data":{"userId":103, "userName":"Venky"}
+        "data":{"userId":101, "userName":"Venkatesh", "FName":"ABC", "LName":"ABC", "City":"BLR", "State":"KA", "Pincode":560029}
+
     }
 }    
