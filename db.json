@@ -6,8 +6,21 @@
         {"userId":104, "userName":"Raju", "FName":"ABC", "LName":"ABC", "City":"BLR", "State":"KA", "Pincode":560029},
         {"userId":105, "userName":"Amma", "FName":"ABC", "LName":"ABC", "City":"BLR", "State":"KA", "Pincode":560029}
     ],
-    "cityList":["Bangalore", "Hydharabad", "Pune", "Andhrapradesh"],
-    "stateList":["KA", "TL", "MH", "AP"],
+    "cities": [
+        {
+          "id": 1,
+          "name": "Bangalore"
+        },
+        {
+          "id": 2,
+          "name": "Mumbai"
+        },
+        {
+          "id": 3,
+          "name": "Delhi"
+        }
+      ],
+    "stateList":[{"id":1, "name":"KA"}, {"id":2, "name":"TL"}, {"id":3, "name":"AP"}],
     "createList":{
         "result":"true",
         "data":{"userId":101, "userName":"Venkatesh", "FName":"ABC", "LName":"ABC", "City":"BLR", "State":"KA", "Pincode":560029}
@@ -23,4 +36,5 @@
         "data":{"userId":101, "userName":"Venkatesh", "FName":"ABC", "LName":"ABC", "City":"BLR", "State":"KA", "Pincode":560029}
 
     }
-}    
+}
+  
