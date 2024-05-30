@@ -21,6 +21,7 @@
                         <th scope="col">Last Name</th>
                         <th scope="col">City</th>
                         <th scope="col">State</th>
+                        <th scope="col">Action</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -32,6 +33,10 @@
                             <td>{{item.LName}}</td>
                             <td>{{item.City}}</td>
                             <td>{{item.State}}</td>
+                            <td>
+                                <button class="btn btn-primary btn-sm " (click)="onEdit()">Edit</button> 
+                                <button class="btn btn-danger btn-sm" (click)="onDelete(item.userid)">Delete</button>
+                            </td>
                         </tr>
                     }                 
                   </tbody>
@@ -107,7 +112,7 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <button class="btn btn-primary" type="submit">Submit form</button>
+                        <button class="btn btn-primary" type="button" (click)="saveData()">Submit form</button>
                     </div>
                 </form>
             </div>
