@@ -45,10 +45,10 @@ export class AppComponent implements OnInit{
     const isDelete = confirm("Are You Sure, You Want To Delete..");
     if(isDelete){
       this.http.delete<user>("http://localhost:3000/deleteList").subscribe((res:user)=>{
-      alert("User Date Delete Successfully");
      });
      const currentdata = this.userList.findIndex(m=> m.userid === this.userList.unshift());
       this.userList.splice(currentdata,1);
+      alert("User Date Delete Successfully");
     }
   }
   onEdit(){
