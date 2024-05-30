@@ -13,19 +13,28 @@ import { Observable } from 'rxjs';
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit{
+[x: string]: any;
   title = 'Angualr_JSON-crud';
   userObj:user = new user();
 
   http =inject(HttpClient);
   cityList$:Observable<string[]> = new Observable<string[]>();
   stateList$:Observable<string[]> = new Observable<string[]>();
+  userList:user []=[];
   // constructor(){}
   
   ngOnInit(): void {
     this.cityList$ = this.http.get<string[]>("http://localhost:3000/cities");
     this.stateList$ = this.http.get<string[]>("http://localhost:3000/stateList");
+    this.getUser();
   }
-  
+   
+  getUser(){
+    this.http.get<user[]>("http://localhost:3000/user").subscribe((res:user[])=>{
+      this.userList = res;
+    })
+  }
+
 }
 
   export class user {
