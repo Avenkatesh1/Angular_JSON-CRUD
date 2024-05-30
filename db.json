@@ -8,20 +8,9 @@
     ],
     "cities": ["Bangalore", "Andhrapradesh", "Hydarabad"],
     "stateList":["KA","TL","AP"],
-    "createList":{
-        "result":"true",
-        "data":{"userId":101, "userName":"Venkatesh", "FName":"ABC", "LName":"ABC", "City":"BLR", "State":"KA", "Pincode":560029}
-
-    },
-    "updateList":{
-        "result":"true",
-        "data":{"userId":101, "userName":"Venkatesh", "FName":"ABC", "LName":"ABC", "City":"BLR", "State":"KA", "Pincode":560029}
-
-    },
-    "deleteList":{
-        "result":"true",
-        "data":{"userId":101, "userName":"Venkatesh", "FName":"ABC", "LName":"ABC", "City":"BLR", "State":"KA", "Pincode":560029}
-
-    }
+    "createList":{"userId":101, "userName":"Venkatesh", "FName":"ABC", "LName":"ABC", "City":"BLR", "State":"KA", "Pincode":560029},
+    "updateList":{"userId":101, "userName":"Venkatesh", "FName":"ABC", "LName":"ABC", "City":"BLR", "State":"KA", "Pincode":560029},
+    "deleteList":{"userId":101, "userName":"Venkatesh", "FName":"ABC", "LName":"ABC", "City":"BLR", "State":"KA", "Pincode":560029}
 }
+
   
