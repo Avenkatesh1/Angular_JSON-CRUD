@@ -2,7 +2,7 @@
     <div class="col-8">
         <div class="card">
             <div class="card-heder bg-success">
-                <div class="row">
+                <div class="row p-2">
                     <div class="col-6">
                         User List
                     </div>
@@ -12,8 +12,29 @@
                 </div>
             </div>
             <div class="card-body">
-                <table>
-
+                <table class="table">
+                  <thead>
+                    <tr>
+                        <th scope="col">S No.</th>
+                        <th scope="col">Username</th>
+                        <th scope="col">First Name</th>
+                        <th scope="col">Last Name</th>
+                        <th scope="col">City</th>
+                        <th scope="col">State</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    @for (item of userList; track $index) {
+                        <tr>
+                            <th class="row">{{$index+1}}</th>
+                            <td>{{item.userName}}</td>
+                            <td>{{item.FName}}</td>
+                            <td>{{item.LName}}</td>
+                            <td>{{item.City}}</td>
+                            <td>{{item.State}}</td>
+                        </tr>
+                    }                 
+                  </tbody>
                 </table>
             </div>
         </div>
@@ -21,7 +42,7 @@
     <div class="col-4">
         <div class="card">
             <div class="card-heder bg-success">
-                <div class="row">
+                <div class="row p-2">
                     <div class="col-6">
                         New user
                     </div>
@@ -34,14 +55,14 @@
                 <form class="row g-3 needs-validation" novalidate>
                     <div class="col-md-4">
                         <label for="validationCustom01" class="form-label">First name</label>
-                        <input type="text" name="" [(ngModel)]="userObj.FName" class="form-control" id="validationCustom01" value="Mark" required>
+                        <input type="text" name="Fname" [(ngModel)]="userObj.FName" class="form-control" id="validationCustom01" value="Mark" required>
                         <div class="valid-feedback">
                             Looks good!
                         </div>
                     </div>
                     <div class="col-md-4">
                         <label for="validationCustom02" class="form-label">Last name</label>
-                        <input type="text" name="" [(ngModel)]="userObj.LName" class="form-control" id="validationCustom02" value="Otto" required>
+                        <input type="text" name="LName" [(ngModel)]="userObj.LName" class="form-control" id="validationCustom02" value="Otto" required>
                         <div class="valid-feedback">
                             Looks good!
                         </div>
@@ -50,7 +71,7 @@
                         <label for="validationCustomUsername" class="form-label">Username</label>
                         <div class="input-group has-validation">
                             <span class="input-group-text" id="inputGroupPrepend"></span>
-                            <input type="text" name="" [(ngModel)]="userObj.userName" class="form-control" id="validationCustomUsername"
+                            <input type="text" name="userName" [(ngModel)]="userObj.userName" class="form-control" id="validationCustomUsername"
                                 aria-describedby="inputGroupPrepend" required>
                             <div class="invalid-feedback">
                                 Please choose a username.
@@ -59,7 +80,7 @@
                     </div>
                     <div class="col-md-6">
                         <label for="validationCustom03" class="form-label">City</label>
-                        <select name="" [(ngModel)]="userObj.City" class="form-select" id="validationCustom04" required>
+                        <select name="City" [(ngModel)]="userObj.City" class="form-select" id="validationCustom04" required>
                             <option selected disabled value="">Choose...</option>
                             @for (item of cityList$ |async; track $index) {
                             <option>{{item}}</option>                               
@@ -68,7 +89,7 @@
                     </div>
                     <div class="col-md-3">
                         <label for="validationCustom04" class="form-label">State</label>
-                        <select name="" [(ngModel)]="userObj.State" class="form-select" id="validationCustom04" required>
+                        <select name="state" [(ngModel)]="userObj.State" class="form-select" id="validationCustom04" required>
                             <option selected disabled value="">Choose...</option>
                             @for (item of stateList$ |async; track $index) {
                                 <option>{{item}}</option>                               
@@ -80,7 +101,7 @@
                     </div>
                     <div class="col-md-3">
                         <label for="validationCustom05" class="form-label">Zip</label>
-                        <input type="text" name="" [(ngModel)]="userObj.Pincode" class="form-control" id="validationCustom05" required>
+                        <input type="text" name="Pincode" [(ngModel)]="userObj.Pincode" class="form-control" id="validationCustom05" required>
                         <div class="invalid-feedback">
                             Please provide a valid zip.
                         </div>
